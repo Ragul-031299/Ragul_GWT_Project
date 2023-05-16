@@ -1,0 +1,81 @@
+@import "./abstract/variables";
+@import "./mixings/breakpoints";
+@import "./abstract/common";
+@import "./include/buttons";
+@import "./include/header";
+@import "./include/footer";
+
+.container-fluid {
+  .logo {
+    background: linear-gradient(rgb(69, 139, 107), rgb(27, 119, 124));
+  }
+  .logo1 {
+    border-top-right-radius: 2.3rem;
+    border-bottom-right-radius: 2.3rem;
+  }
+  .energy {
+    letter-spacing: 1px;
+    overflow: auto;
+    white-space: nowrap;
+   
+  }
+  .logo2 {
+    height: 3rem;
+    letter-spacing: 2px;
+  }
+  .img3 {
+    @include media-max-sm {
+      display: none;
+    }
+  }
+}
+
+.navbar {
+  background-color: $light-green;
+  color: black;
+  letter-spacing: 2px;
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        &:hover {
+          background-color: #198757;
+        }
+      }
+    }
+  }
+}
+
+.card {
+  background-color: $light-green;
+  font-weight: 500;
+}
+.clear {
+  border: none;
+  background-color: rgb(27, 109, 134);
+}
+.graph {
+  background-color: $light-green;
+}
+.footer {
+  background-color: rgb(36, 104, 104);
+}
+.summary {
+  font-size: 13px;
+}
+.radio {
+  text-align: center;
+  margin-left: 2rem;
+  font-size: 12px;
+  padding: 1rem;
+}
+h6 {
+  font-size: 15px;
+}
+li {
+  font-weight: 500;
+}
+.bg-image{
+  background-image: url(/assests/image/group\ img.png);
+  height: 100vh;
+  width: 100vw;
+}
